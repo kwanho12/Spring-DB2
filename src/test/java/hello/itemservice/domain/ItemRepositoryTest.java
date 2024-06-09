@@ -4,6 +4,7 @@ import hello.itemservice.repository.ItemRepository;
 import hello.itemservice.repository.ItemSearchCond;
 import hello.itemservice.repository.ItemUpdateDto;
 import hello.itemservice.repository.memory.MemoryItemRepository;
+import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -77,7 +78,7 @@ class ItemRepositoryTest {
         test("", null, item1, item2, item3);
 
         //itemName 검증
-        test("itemA", null, item1, item2);
+         test("itemA", null, item1, item2);
         test("temA", null, item1, item2);
         test("itemB", null, item3);
 
